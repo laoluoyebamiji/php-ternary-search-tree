@@ -44,13 +44,20 @@ var_dump($myTernaryTree);
 // broken
 // $myTernaryTree->traverse();
 
-echo(time()."\n");
+echo(microtime_float()."\n");
 $result = $myTernaryTree->search($searchWord, "i");
-echo(time()."\n");
+echo(microtime_float()."\n");
 echo("iterative result: $result\n");
-echo(time()."\n");
+
+echo(microtime_float()."\n");
 $result = $myTernaryTree->search($searchWord, "r");
-echo(time()."\n");
+echo(microtime_float()."\n");
 echo("recursive result: $result\n");
+
+function microtime_float()
+{
+    list($usec, $sec) = explode(" ", microtime());
+    return ((float)$usec + (float)$sec);
+}
 
 ?>
