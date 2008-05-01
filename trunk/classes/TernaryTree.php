@@ -1,5 +1,15 @@
 <?
 
+/*
+
+Owen Borseth
+Name.com LLC
+owen@borseth.us
+
+Main class for PHP implementation of a ternary search tree.
+
+*/
+
 class TernaryTree
 {
     private $tree;

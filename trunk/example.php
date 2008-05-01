@@ -1,5 +1,15 @@
 <?
 
+/*
+
+Owen Borseth
+Name.com LLC
+owen@borseth.us
+
+Example of how to use the PHP implementation of a ternary search tree.
+
+*/
+
 ini_set("memory_limit", "1G");
 ini_set("max_execution_time", "0");
 
@@ -31,7 +41,8 @@ echo("Done loading.\n\n");
 
 var_dump($myTernaryTree);
 
-$myTernaryTree->traverse();
+// broken
+// $myTernaryTree->traverse();
 
 echo(time()."\n");
 $result = $myTernaryTree->search($searchWord, "i");
